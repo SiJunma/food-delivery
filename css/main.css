@@ -1,0 +1,385 @@
+body {
+    padding-top: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #302C34;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1.04%, rgba(245, 245, 245, 0)), to(#F5F5F5));
+    background: -o-linear-gradient(top, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 39px;
+    line-height: 46px;
+    margin-bottom: 15px;
+    max-width: 415px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 44px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000000;
+    width: 96px;
+    font-size: 15px;
+    line-height: 18px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.form {
+    width: 100%;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+}
+
+.input-form {
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-adress {
+    background-image: url('../img/home-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 35px;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+input::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #BFBFBF;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 1; /* Firefox */
+  }
+
+input::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #BFBFBF;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 1; /* Firefox */
+  }
+
+input:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #BFBFBF;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 1; /* Firefox */
+  }
+
+input::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #BFBFBF;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 1; /* Firefox */
+  }
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #BFBFBF;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 1; /* Firefox */
+  }
+  
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #BFBFBF;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #BFBFBF;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+.btn {
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    cursor: pointer;
+}
+
+.btn-enter {
+    background-color: #1890FF;
+    color: #FFFFFF;
+    background-image: url('../img/user-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    padding-left: 35px;
+}
+
+.btn-card {
+    background-image: url('../img/bag-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    padding-left: 35px;
+    border: 1px solid #D9D9D9;
+}
+
+.head-btn-card {
+    margin-left: 10px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.offer {
+    background-color: #FFF1B8;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 300px;
+    padding-left: 7%;
+    background-image: url('https://www.epochtimes.com.ua/sites/default/files/field/image/08-2019/supreme-pizza-619133_640.png');
+    background-repeat: no-repeat;
+    background-position: top right -120px;
+    background-size: contain;
+    -webkit-box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+            box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    border-radius: 10px;
+}
+
+.offer small {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+    max-width: 538px;
+}
+
+.card {
+    max-width: 380px;
+}
+
+.offer-design {
+    margin-bottom: 55px;
+}
+
+.input-search {
+    width: 100%;
+    max-width: 306px;
+    height: 35px;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.form-search {
+    text-align: right;
+}
+
+.item-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 24px;
+    padding-bottom: 34px;
+    margin: 0;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+}
+
+.item-title__time {
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: block;
+    background-color: #262626;
+    padding: 1px 8px;
+    border-radius: 2px;
+    height: 22px;
+}
+
+.item-title {
+    padding: 20px 24px 10px 24px ;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.item-title h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: block;
+    text-decoration: none;
+    color: #302C34;
+    -webkit-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+}
+
+.item-info__rate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #FFC107;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    margin-right: 26px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+}
+
+.item-info__rate::before {
+    content: '';
+    display: block;
+    background-image: url('../img/star.svg');
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.item-info__cost::after {
+    content: '●';
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.card img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+nav {
+    margin-left: 40px;
+}
+
+nav a {
+    font-size: 18px;
+    line-height: 21px;
+    color: #595959;
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #2b2b2b;
+}
+
+footer {
+    padding: 60px;
+    background-color: #fff;
+}
+
+.social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.social a {
+    height: 25px;
+    width: 25px;
+    background-image: url('../img/inst.svg');
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 25px 25px;
+    margin-left: 21px;
+}
+
+.social .social-fb {
+    background-image: url('../img/fb.svg');
+}
+
+.social .social-vk {
+    background-image: url('../img/vk.svg');
+    height: 25px;
+    width: 35px;
+    background-size: 35px 25px;
+}
+
+.restourants {
+    margin-bottom: 60px;
+}
