@@ -156,6 +156,10 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     padding-left: 35px;
 }
 
+.btn-enter:hover {
+    background-color: #0e7be0;
+}
+
 .btn-card {
     background-image: url('../img/bag-icon.svg');
     background-repeat: no-repeat;
@@ -298,6 +302,11 @@ header {
     transition: ease 0.2s;
 }
 
+.r-card:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    transform: scale(1);
+}
+
 .item-info__rate {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -393,6 +402,69 @@ footer {
     padding-bottom: 60px;
 }
 
+.r-title .item-info__rate {
+    margin-left: 30px;
+}
+
+.r-title span:not(.item-info__rate) {
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+}
+
+.r-card .item-info {
+    padding-right: 20px;
+    padding-bottom: 0;
+}
+
+.r-card .item-info span {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.r-title {
+    align-items: baseline;
+}
+
+.r-card img {
+    object-fit: contain;
+}
+
+.r-card .item-title h3 {
+    font-size: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.btn-to-card {
+    background-color: #1890FF;
+    color: #FFFFFF;
+    background-image: url(../img/user-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    padding-left: 35px;
+    margin-right: 32px;
+}
+
+.btn-container  {
+    padding: 24px;
+}
+
+.btn-container span {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.btn-to-card:hover {
+    background-color: #0e7be0;
+}
+
 @media screen and (max-width: 1199px)  {
     .offer {
         background-position: top right -250px;
@@ -408,6 +480,10 @@ footer {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end;
+    }
+
+    .restourants .item-info__rate {
+        width: auto;
     }
 }
 
@@ -458,6 +534,11 @@ footer {
         text-align: center;
         margin-top: 10px;
     }
+
+    .r-title {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -473,6 +554,24 @@ footer {
     .offer h1 {
         font-size: 29px;
         line-height: 36px;
+    }
+
+    .r-title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .restourant-title {
+        margin-bottom: 20px;
+    }
+
+    .r-title .item-info__rate {
+        margin-left: 0px;
+    }
+
+    .r-rate {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
