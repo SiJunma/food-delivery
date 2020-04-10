@@ -3,8 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #302C34;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1.04%, rgba(245, 245, 245, 0)), to(#F5F5F5));
     background: -o-linear-gradient(top, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1.04%, rgba(245, 245, 245, 0)), to(#F5F5F5));
     background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
 }
 
@@ -29,7 +29,6 @@ h1 {
 h2 {
     font-size: 36px;
     line-height: 42px;
-    margin-bottom: 44px;
 }
 
 .logo a {
@@ -162,7 +161,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     border: 1px solid #D9D9D9;
 }
 
-.head-btn-card {
+.head-btn-card:not(:first-child) {
     margin-left: 10px;
 }
 
@@ -266,6 +265,10 @@ header {
     padding: 0;
 }
 
+.restourant-title {
+    margin-bottom: 44px;
+}
+
 .card {
     background: #FFFFFF;
     -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
@@ -337,8 +340,8 @@ nav a {
     font-size: 18px;
     line-height: 21px;
     color: #595959;
-    margin-right: 25px;
     text-decoration: none;
+    margin: 12px;
 }
 
 nav a:hover {
@@ -366,6 +369,9 @@ footer {
     background-repeat: no-repeat;
     display: block;
     background-size: 25px 25px;
+}
+
+.social a:not(:first-child) {
     margin-left: 21px;
 }
 
@@ -382,4 +388,99 @@ footer {
 
 .restourants {
     margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px)  {
+    .offer {
+        background-position: top right -250px;
+    }
+
+    .item-info {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .item-info__rate {
+        width: 100%;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    nav {
+        margin: 0 auto;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .offer {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .input-adress {
+        margin-top: 10px;
+    }
+
+    nav {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .offer h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .offer small {
+        font-size: 19px;
+        max-width: 400px;
+    }
+
+    .restourant-title {
+        text-align: center;
+    }
+
+    .form-search {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .offer small {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .offer {
+        padding-right: 7%;
+    }
+
+    .offer h1 {
+        font-size: 29px;
+        line-height: 36px;
+    }
+}
+
+@media screen and (max-width: 423px) {
+    .footer-center,
+    .head-center {
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
 }
