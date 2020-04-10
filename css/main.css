@@ -3,6 +3,9 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #302C34;
+}
+
+main {
     background: -o-linear-gradient(top, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(1.04%, rgba(245, 245, 245, 0)), to(#F5F5F5));
     background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
@@ -387,7 +390,7 @@ footer {
 }
 
 .restourants {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 @media screen and (max-width: 1199px)  {
